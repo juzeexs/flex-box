@@ -1,0 +1,37 @@
+.Block {
+  background-color: rgb(185, 189, 190);
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  margin: 20px;
+}
+
+.Up_Part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Down_Part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Down_Part div {
+  width: 30%;
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+  .Up_Part {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+  .Down_Part {
+    flex-direction: column-reverse;
+  }
+}
+@media (min-width: 641px) {
+}
